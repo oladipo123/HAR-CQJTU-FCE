@@ -6,9 +6,7 @@ A Self Supervised Learning Model for Human Activity Recognition Based on IMU
 This project contains following folders and files.
 - [`config`](./config) : config json files of models and training hyper-parameters.
 - [`dataset`](./dataset) : the scripts for preprocessing four open datasets and a config file of key attributes of those datasets.
-- [`benchmark.py`](./benchmark.py) : run DCNN, DeepSense, and R-GRU.
 - [`classifier.py`](./classifier.py) : run LIMU-GRU that inputs representations learned by LIMU-BERT and output labels for target applications.
-- [`classifier_bert.py`](./classifier_bert.py) : run LIMU-GRU that inputs raw IMU readings and output labels for target applications.
 - [`config.py`](./config.py) : some helper functions for loading settings.
 - [`embedding.py`](./embedding.py) : generates representation or embeddings for raw IMU readings given a pre-trained LIMU-BERT.
 - [`models.py`](./models.py) : the implementations of LIMU-BERT, LIMU-GRU, and other baseline models.
@@ -123,5 +121,6 @@ Note: The myowner dataset in the code is the self collected CQJTU-FCE dataset.
 
 ## Contact
 13529310738@163.com
+
 
 
