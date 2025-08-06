@@ -46,7 +46,7 @@ Each script has a kernel function which reads the raw IMU data and output prepro
 - Label: a numpy array with the shape of (N\*W\*L), N is the number of samples, W is the windows size, and L is the number of label types (e.g., activity and user labels). The detailed label information is provided in [`data_config.json`](./dataset/data_config.json).
 
 The two numpy arrays are saved as "data_X_Y.npy" and "label_X_Y.npy" in each dataset folder, where X represents the sampling rate and Y is the window size. 
-For example, all data and label are saved as "data_20_120.npy" and "label_20_120.npy" in the settings of learning feature. And the data and label arrays of HHAR dataset are saved in the _dataset/hhar_ folder.
+For example, all data and label are saved as "data_20_120.npy" and "label_20_120.npy" in the settings of learning feature. And the data and label arrays of HHAR dataset can be saved in the _dataset/hhar_ folder.
 
 ## Framework
 In our framework, there are two phases:
@@ -125,6 +125,7 @@ Note: The myowner dataset in the code is the self collected CQJTU-FCE dataset.
 
 ## Contact
 13529310738@163.com
+
 
 
 
