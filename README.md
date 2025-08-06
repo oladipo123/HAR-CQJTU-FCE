@@ -36,7 +36,9 @@ In the [`dataset`](./dataset) folder, we provide four scripts that preprocess th
 - [HHAR](http://archive.ics.uci.edu/ml/datasets/heterogeneity+activity+recognition)
 - [UCI](https://archive.ics.uci.edu/dataset/341/smartphone+based+recognition+of+human+activities+and+postural+transitions)
 - [MotionSense](https://github.com/mmalekzadeh/motion-sense)
-- [CQJTU-FEC](13529310738@163.com)
+- [CQJTU-FEC].label:https://easylink.cc/wh85er
+-             data:https://easylink.cc/85e7do
+- Click on the link to download the data and tags separately. After the download is complete, more content will be displayed, and only the file formats data_20_120.npy and labels_20_120.npy will be retained
 
 Each script has a kernel function which reads the raw IMU data and output preprocessed data and label. You can set the sampling rate and window size (sequence length) in the functiono. It retures two values:
 - Data: a numpy array with the shape of (N\*W\*F), N is the number of samples, W is the windows size, and F is the number of features (6 or 9).
@@ -122,6 +124,7 @@ Note: The myowner dataset in the code is the self collected CQJTU-FCE dataset.
 
 ## Contact
 13529310738@163.com
+
 
 
 
