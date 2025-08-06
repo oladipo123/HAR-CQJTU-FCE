@@ -1,14 +1,7 @@
 <<<<<<< HEAD
 # HAR-CQJTU-FCE
 A Self Supervised Learning Model for Human Activity Recognition Based on IMU
-=======
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-# LIMU-BERT
-LIMU-BERT, a novel representation learning model that can make use of unlabeled IMU data and extract generalized rather than task-specific features. 
-LIMU-BERT adopts the principle of natural language model BERT to effectively capture temporal relations and feature distributions in IMU sensor data. With the representations learned via LIMU-BERT, task-specific models trained with limited labeled samples can achieve superior performances. 
-The designed models are lightweight and easily deployable on mobile devices. 
 
-Please check our paper [LIMU-BERT](https://dl.acm.org/doi/10.1145/3485730.3485937) for more details.
 ## File Overview
 This project contains following folders and files.
 - [`config`](./config) : config json files of models and training hyper-parameters.
@@ -40,38 +33,11 @@ This project contains following folders and files.
 Assume that we use ```~/Repos``` as the working directory. Git clone this repo:
 ```
 $ cd ~/Repos
-$ git clone https://github.com/dapowan/LIMU-BERT-Public
+$ git clone https://github.com/oladipo123/HAR-CQJTU-FCE
 ```
 
 ## Setup
-### Option1: Docker Image
-In this option, we can use the image which has installed the required environments for the usage of this repo directly. Once we successfully start a container on this image, we can skip Option2.
-
-Pull the image from [this docker hub link](https://hub.docker.com/r/bryanbocao/limu-bert-env_10.2-cudnn8-devel-ubuntu18.04-cv2-torchvision) by:
-```
-$ docker pull bryanbocao/limu-bert-env_10.2-cudnn8-devel-ubuntu18.04-cv2-torchvision
-```
-Check image ID:
-```
-$ docker image ls
-```
-which displays
-```
-REPOSITORY                                                               TAG         IMAGE ID       CREATED          SIZE
-bryanbocao/limu-bert-env_10.2-cudnn8-devel-ubuntu18.04-cv2-torchvision   latest      <IMAGE_ID>   10 minutes ago   11.8GB
-```
-Docker run a containe with ```<IMAGE_ID>```:
-```
-$ docker run --ipc=host --shm-size=16384m -it -v ~/:/share --gpus all --network=bridge <IMAGE_ID> /bin/bash
-```
-
-Locate to the folder in the container
-```
-$ cd /share/Repos/LIMU-BERT-Public
-```
-At this point you are ready to run the code directly and skip Option2.
-
-### Option2: pip
+### Option: pip
 This repository has be tested for Python 3.7.7/3.8.5 and Pytorch 1.5.1/1.7.1. To install all dependencies, use the following command:
 ```
 $ pip install -r requirements.txt
@@ -189,22 +155,6 @@ The trained DCNN classifier will be saved as "dcnn_v1.pt" in the _saved/bench_dc
 
 In the main function of [`benchmark.py`](./benchmark.py), the parameters are the same to those in [`classifier.py`](./classifier.py).
 
-
-## Citation
-[LIMU-BERT: Unleashing the Potential of Unlabeled Data for IMU Sensing Applications](https://dl.acm.org/doi/10.1145/3485730.3485937)
-```
-@inproceedings{xu2021limu,
-  title={LIMU-BERT: Unleashing the Potential of Unlabeled Data for IMU Sensing Applications},
-  author={Xu, Huatao and Zhou, Pengfei and Tan, Rui and Li, Mo and Shen, Guobin},
-  booktitle={Proceedings of the 19th ACM Conference on Embedded Networked Sensor Systems},
-  pages={220--233},
-  year={2021}
-}
-```
-
 ## Contact
-huatao001@e.ntu.edu.sg (preferred)
+13529310738@qq.com
 
-735820057@qq.com
-
->>>>>>> 8604357 (first commit)
