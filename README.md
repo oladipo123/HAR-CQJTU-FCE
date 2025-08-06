@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # HAR-CQJTU-FCE
-A Self Supervised Learning Model for Human Activity Recognition Based on IMU
+A Self-Supervised Learning Model for Human Activity Recognition Based on IMU
 
 ## File Overview
 This project contains following folders and files.
@@ -125,6 +125,7 @@ Note: The myowner dataset in the code is the self collected CQJTU-FCE dataset.
 
 ## Contact
 13529310738@163.com
+
 
 
 
