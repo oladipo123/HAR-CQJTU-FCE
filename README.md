@@ -9,7 +9,7 @@ This project contains following folders and files.
 - [`torchtsmixer`](./torchtsmixer) : cthe proposed model and activation function.
 - [`classifier.py`](./classifier.py) : run learning feature that inputs representations learned by model and output labels for target applications.
 - [`config.py`](./config.py) : some helper functions for loading settings.
-- [`embedding.py`](./embedding.py) : generates representation or embeddings for raw IMU readings given a pre-trained LIMU-BERT.
+- [`embedding.py`](./embedding.py) : generates representation or embeddings for raw IMU readings given a pre-trained learning feature model.
 - [`models.py`](./models.py) : the implementations of feature model, GRU, and other baseline models.
 - [`plot.py`](./plot.py) : some helper function for plotting IMU sensor data or learned representations.
 - [`pretrain.py`](./pretrain.py) : pretrain learnging feature.
@@ -125,6 +125,7 @@ Note: The myowner dataset in the code is the self collected CQJTU-FCE dataset.
 
 ## Contact
 13529310738@163.com
+
 
 
 
